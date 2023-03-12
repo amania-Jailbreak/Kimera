@@ -13,7 +13,7 @@ const {contextTemplate} = require('./menu');
 
 const fs = require('fs');
 const directory = `${__dirname}/..`;
-let viewY = 66;
+let viewY = 85;
 const {LowLevelConfig} = require(`${directory}/proprietary/lib/config.js`);
 const monotConfig = new LowLevelConfig('config.mncfg').copyFileIfNeeded(`${directory}/default/config/config.mncfg`);
 const enginesConfig = new LowLevelConfig('engines.mncfg').copyFileIfNeeded(`${directory}/default/config/engines.mncfg`);

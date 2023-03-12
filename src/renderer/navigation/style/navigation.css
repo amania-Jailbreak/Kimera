@@ -1,23 +1,22 @@
 @import url('../../../proprietary/style/font.css');
 
 :root {
-  --main-background: #efefef;
-  --text-color: #000;
-  --borderline-color: #ddd8;
-  --opened-tab-color: #bbb8;
+    --main-background: #222;
+    --text-color: #fff;
+    --borderline-color: #008c00;
+    --opened-tab-color: #fff1;
 
-  --border-color-unhover: #ddd0;
-  --border-color: #ddd8;
-  --shadow-color: #bfbfbf55;
-  --shadow-color-unhover: #0000;
-  --backgroundcolor-unhover: #efefef00;
-  --backgroundcolor: #eee8;
-  --input-color-unhover: #efefef44;
-  --closebutton-color: #fff4;
-  --loading-color: #8888;
-
-  --wallpaper: none;
-  --wallpaper-brightness: brightness(100%);
+    --border-color-unhover: #ddd0;
+    --border-color: #00cc00;
+    --shadow-color: #bfbfbf55;
+    --shadow-color-unhover: #0000;
+    --backgroundcolor-unhover: #ccc0;
+    --backgroundcolor: #4448;
+    --input-color-unhover: #fff1;
+    --closebutton-color: #fff4;
+    --loading-color: #00cc00;
+    --wallpaper: none;
+    --wallpaper-brightness: brightness(80%);
 }
 
 * {
@@ -83,7 +82,7 @@ body nav > * {
   top: 0;
   display: inline-block;
   border-radius: 10px;
-  height: 23px;
+  height: 30px;
   aspect-ratio: 1/1;
   margin: 3px;
   background-color: var(--backgroundcolor-unhover);
@@ -95,7 +94,7 @@ body input {
   -webkit-user-drag: initial;
   width: 100%;
   padding: 0 7.5px;
-  font-size: 11px;
+  font-size: 13px;
   background-color: var(--input-color-unhover);
   color: var(--text-color);
   backdrop-filter: brightness(85%);
@@ -195,7 +194,7 @@ tab-el {
   vertical-align: middle;
   display: flex;
   overflow: hidden;
-  height: 32.5px;
+  height: 40px;
 }
 tab-el * {
   -webkit-user-drag: none;
@@ -218,7 +217,7 @@ tab-el > div > span {
   text-align: left;
   padding: 2px;
   padding-right: 15px;
-  font-size: 12px;
+  font-size: 15px;
   border-radius: 1px;
   border: 1px solid var(--border-color-unhover);
   transition: all 0.2s ease-in-out;
@@ -260,14 +259,14 @@ tab-el > a {
 yomikomi-bar {
   display: block;
   position: absolute;
-  top: -1px;
+  top: 81px;
   bottom: 0;
   left: -9px;
-  width: 0;
+  width: 100px;
   height: 10px;
   background-color: var(--loading-color);
   z-index: 0;
-  filter: blur(5px) var(--wallpaper-brightness);
+  filter: blur(1px) var(--wallpaper-brightness);
   border-radius: 0 5px 0 0;
   transition: all 0.2s ease-in-out;
   opacity: 0;
@@ -350,18 +349,18 @@ yomikomi-bar#loaded {
   :root {
     --main-background: #222;
     --text-color: #fff;
-    --borderline-color: #3338;
+    --borderline-color: #008c00;
     --opened-tab-color: #fff1;
 
     --border-color-unhover: #ddd0;
-    --border-color: #666e;
+    --border-color: #00cc00;
     --shadow-color: #bfbfbf55;
     --shadow-color-unhover: #0000;
     --backgroundcolor-unhover: #ccc0;
     --backgroundcolor: #4448;
     --input-color-unhover: #fff1;
     --closebutton-color: #fff4;
-    --loading-color: #444c;
+    --loading-color: #00cc00;
 
     --wallpaper-brightness: brightness(80%);
   }

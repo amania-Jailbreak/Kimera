@@ -11,17 +11,19 @@ const isMac = process.platform === 'darwin';
 const aboutContent = {
   type: 'info',
   icon: isMac ? './src/image/logo-mac.png' : './src/image/logo.png',
-  title: 'Monotについて',
-  message: 'Monotについて',
-  detail: `Monot by monochrome. v.1.1.0 (Build 8)
-バージョン: 1.1.0
-ビルド番号: 8
-開発元: monochrome Project.
+  title: 'Kimeraについて',
+  message: 'Kimeraについて',
+  detail: `Kimera Browser
+バージョン: 0.0.1
+ビルド番号: 1
+開発元: CasioTweaks
+作者: amania
 
-リポジトリ: https://github.com/mncrp/monot
-公式サイト: https://mncrp.github.io/project/monot/
+ライセンス: monochrome. License (内容はレポジトリをご確認ください)
+リポジトリ: https://github.com/amania-Jailbreak/Kimera
+公式サイト: https://www.amania-tools.com/
 
-Copyright ©︎ 2021-2022 monochrome Project.`
+© 2017 - 2023 amania Tools / Project by CasioTweaks `
 };
 
 const navigationContextMenuTemplate = [

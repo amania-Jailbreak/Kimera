@@ -51,7 +51,7 @@ h1 {
   display: inline-block;
 }
 h5 {
-  font-size: 15px;
+  font-size: 20px;
   display: inline;
   margin-left: 10px;
 }
@@ -59,7 +59,7 @@ h5 {
 h1::before {
   content: '';
   display: inline-block;
-  width: 65px; height: 65px;
+  width: 100px; height: 100px;
   background-image: url('../../image/logo.png');
   background-position: center;
   background-size: cover;
