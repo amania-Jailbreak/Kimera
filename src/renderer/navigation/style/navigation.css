@@ -69,7 +69,7 @@ nav {
   display: flex;
   position: relative;
   height: auto;
-  width: 100%;
+
   transition: all 0.4s cubic-bezier(.7, 0, .3, 1);
   z-index: 0;
 }
@@ -213,13 +213,13 @@ tab-el > div > span {
 	white-space: nowrap;
   padding-right: 20px;
   padding-left: 5px;
-  width: 100%;
-  margin: 3px 2px 5px 1px;
-  text-align: center;
+  width: 30%;
+  margin: 3px 2px 0px 1px;
+  text-align: left;
   padding: 2px;
   padding-right: 15px;
   font-size: 12px;
-  border-radius: 10px;
+  border-radius: 1px;
   border: 1px solid var(--border-color-unhover);
   transition: all 0.2s ease-in-out;
   cursor: default;

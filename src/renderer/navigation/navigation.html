@@ -6,23 +6,26 @@
     <link rel="stylesheet" href="style/navigation.css">
   </head>
   <body>
-    <nav>
-      <a href="javascript:node.moveToNewTab()" title="ホーム" id="home"></a>
-      <a href="javascript:node.reloadBrowser()" title="再読み込み" id="reload"></a>
-      <a href="javascript:node.backBrowser()" title="戻る" id="prev"></a>
-      <a href="javascript:node.goBrowser()" title="進む" id="next"></a>
-      <input type="text" placeholder="検索する単語またはURLを入力" title="検索する単語またはURLを入力" id="textbox">
-      <a href="javascript:moveBrowser()" title="移動" id="move"></a>
-      <a href="javascript:node.showMenu()" title="メニュー表示" id="menu" class="window"></a>
+    <tab-el style="margin:auto 0 0 0;">
+      <div>
+      </div>
+      <a href="javascript:node.newtab()"></a>
+      <nav style="margin:0 0 0 auto;">
       <a href="javascript:node.winMinimize()" title="最小化" id="minimize" class="window"></a>
       <a href="javascript:node.maxMin()" title="最大化" id="maximize" class="window"></a>
       <a href="javascript:node.winClose()" title="終了" id="close" class="window"></a>
     </nav>
-    <tab-el>
-      <div>
-      </div>
-      <a href="javascript:node.newtab()"></a>
     </tab-el>
+    <nav>
+      <a href="javascript:node.backBrowser()" title="戻る" id="prev"></a>
+      <a href="javascript:node.goBrowser()" title="進む" id="next"></a>
+      <a href="javascript:node.moveToNewTab()" title="ホーム" id="home"></a>
+      <a href="javascript:node.reloadBrowser()" title="再読み込み" id="reload"></a>
+      <input type="text" placeholder="検索する単語またはURLを入力" title="検索する単語またはURLを入力" id="textbox">
+      <a href="javascript:moveBrowser()" title="移動" id="move"></a>
+      <a href="javascript:node.showMenu()" title="メニュー表示" id="menu" class="window"></a>
+
+    </nav>
     <yomikomi-bar></yomikomi-bar>
     <script src="script/moveBrowser.js"></script>
     <script src="script/event.js"></script>

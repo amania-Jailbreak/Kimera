@@ -192,6 +192,7 @@ const menuTemplate = [
           global.tabs.get().reload();
         }
       },
+      
       {
         label: '戻る',
         accelerator: 'Alt+Left',
@@ -435,6 +436,22 @@ const menuTemplate = [
 // context
 const contextTemplate = [
   {
+    type: 'separator'
+  },
+  {
+    label: 'コピー',
+    role: 'copy',
+    accelerator: 'CmdOrCtrl+C',
+  },
+  {
+    label: 'ペースト',
+    role: 'paste',
+    accelerator: 'CmdOrCtrl+V',
+  },
+  {
+    type: 'separator'
+  },
+  {
     label: '戻る',
     click: () => {
       global.tabs.get().goBack();
@@ -481,6 +498,17 @@ const contextTemplate = [
   },
   {
     type: 'separator'
+  },
+  {
+    label: 'タブの固定/解除',
+    accelerator: 'CmdOrCtrl+Shift+F',
+    click: () => {
+      if (global.win !== null) {
+        global.win.webContents.executeJavaScript(`
+          document.getElementsByTagName('span')[${global.tabs.current}].classList.toggle('fixed');
+        `);
+      }
+    }
   },
   {
     label: '開発者向けツール',

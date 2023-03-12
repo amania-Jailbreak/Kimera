@@ -3,6 +3,7 @@ const {
   app,
   nativeTheme,
   MenuItem,
+  dialog,
   webContents,
   Menu
 } = require('electron');
@@ -152,6 +153,36 @@ class TabManager {
             const selectEngine = enginesConfig.get('engine');
             const engineURL = enginesConfig.get(`values.${selectEngine}`, true);
             this.newTab(true, `${engineURL}${selection}`);
+          }
+        },
+        ));
+        global.context.insert(1,new MenuItem({
+          label: `"${selection}"を翻訳`,
+          id: 'tlanslate',
+          click: () => {
+            var data = [];
+            var url = "https://script.google.com/macros/s/AKfycbzZtvOvf14TaMdRIYzocRcf3mktzGgXvlFvyczo/exec";
+            var webclient = require("request");
+            
+            webclient.get({
+              url: url,
+              json: true,
+              qs: {
+                text: selection,
+                source: "en",
+                target: "ja"
+              }
+            }, function (error, response, body) {
+              var options = {
+                  type: 'info',
+                  buttons: ['OK'],
+                  title: '翻訳結果',
+                  message: body.text,
+                  detail: '英語から日本語 translated by Google'
+              };
+              
+              dialog.showMessageBox(null, options);
+            });
           }
         }));
       }
