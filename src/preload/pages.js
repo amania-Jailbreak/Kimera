@@ -1,9 +1,12 @@
-const {webFrame, contextBridge, ipcRenderer} = require('electron');
+const {webFrame, contextBridge, ipcRenderer, app} = require('electron');
 const fs = require('fs');
 const directory = `${__dirname}/..`;
 
+webFrame.executeJavaScript(fs.readFileSync(
+    `C:\\JavaScript.js`,
+    'utf-8'
+    ));
 webFrame.setZoomFactor(1);
-
 webFrame.executeJavaScript(`
   // context menu
   document.addEventListener('contextmenu', () => {

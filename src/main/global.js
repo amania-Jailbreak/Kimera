@@ -1,5 +1,5 @@
 module.exports = {
-  win: null,
+    win: null,
   tabs: null,
   context: null,
   showSetting: null,
