@@ -37,7 +37,11 @@
     ],
     "win": {
       "icon": "src/image/logo.ico",
-      "target": ["nsis", "zip", "portable"],
+      "target": [
+        "nsis",
+        "zip",
+        "portable"
+      ],
       "legalTrademarks": "Copyright 2021-2022 monochrome."
     },
     "nsis": {
@@ -66,5 +70,8 @@
       "backgroundColor": "#efefef",
       "title": "Monot v1.1.1 Build9"
     }
+  },
+  "dependencies": {
+    "request": "^2.88.2"
   }
 }

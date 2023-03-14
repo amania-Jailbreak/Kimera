@@ -178,7 +178,7 @@ class TabManager {
                   buttons: ['OK'],
                   title: '翻訳結果',
                   message: body.text,
-                  detail: '英語から日本語 translated by Google'
+                  detail: 'translated by Google'
               };
               
               dialog.showMessageBox(null, options);

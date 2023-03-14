@@ -74,10 +74,10 @@ global.navigationContextMenu = Menu.buildFromTemplate(navigationContextMenuTempl
 // Menu
 const menuTemplate = [
   {
-    label: 'Monot',
+    label: 'Kimera',
     submenu: [
       {
-        label: 'Monotについて',
+        label: 'Kimeraについて',
         accelerator: 'CmdOrCtrl+Alt+A',
         click: () => {
           dialog.showMessageBox(null, aboutContent);
@@ -99,13 +99,13 @@ const menuTemplate = [
       },
       {
         role: 'hide',
-        label: 'Monot を非表示'
+        label: 'Kimera を非表示'
       },
       {
         type: 'separator'
       },
       {
-        label: 'Monot を終了',
+        label: 'Kimera を終了',
         accelerator: 'CmdOrCtrl+Q',
         click: () => {
           global.windowClose();

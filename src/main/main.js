@@ -60,7 +60,7 @@ function nw() {
     frame: false,
     transparent: false,
     backgroundColor: '#efefef',
-    title: 'Monot by monochrome.',
+    title: 'Kimera',
     icon: isMac ? `${directory}/image/logo.icns` : `${directory}/image/logo.png`,
     webPreferences: {
       preload: `${directory}/preload/navigation.js`
